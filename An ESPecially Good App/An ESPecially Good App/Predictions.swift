@@ -47,7 +47,7 @@ class Predictions {
     private var currentQuestion: Question!
     
     private init(){
-        
+        generateQuestion()
     }
     
     func generateQuestion() {
@@ -60,30 +60,45 @@ class Predictions {
         }
     }
     
-    /// Returns the # of restaurants
-    
-    func numRestaurants() -> Int {
-        return restaurants.count
+    func check(prediction: Shape) {
+        currentQuestion.predictedShape = prediction
+        questions.append(currentQuestion)
+        
+        if currentQuestion.isCorrect == true {
+            print("Smiley")
+        }
+        else {
+            print("Frowny")
+        }
     }
     
-    // Alternatively, we could subscript Restaurants, so usage would be Restaurants.shared[5]
-    
-    subscript(index:Int) -> Restaurant? {
-        return index >= 0 && index < restaurants.count ? restaurants[index] : nil
+    // Returns number of attempts
+    func numAttempted() -> Int {
+        return questions.count
+    }
+
+    // Returns the number of correct predictions
+    func numCorrect() -> Int {
+        var correctSum: Int = 0
+        for question in questions {
+            if question.isCorrect == true {
+                correctSum += 1
+            }
+        }
+        return correctSum
     }
     
-    /// Adds a restaurant to the collection
-    /// Example usage: Restaurants.shared.add(restaurant:Restaurant(name:"A & G", rating:4))
-    /// - Parameter restaurant: restaurant to add
-    
-    func add(restaurant:Restaurant){
-        restaurants.append(restaurant)
+    // Resets questions to an empty array
+    func clearResults() {
+        questions = []
     }
     
-    /// Now we can delete restaurants too..
-    /// - Parameter at: <#at description#>
-    func delete(at:Int){
-        restaurants.remove(at: at)
+    func question(at: Int) -> Question! {
+        if at >= 0 && at < questions.count {
+            return questions[at]
+        }
+        else {
+            return nil
+        }
     }
-    
 }
