@@ -31,6 +31,24 @@ class HistoryTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 0
     }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        if let restaurant = Restaurants.shared[indexPath.row] {
+            let nameLBL = cell.viewWithTag(nameLBLTag) as! UILabel
+            let ratingLBL = cell.viewWithTag(ratingLBLTag) as! UILabel
+            let imageView = cell.viewWithTag(imageViewTag) as! UIImageView
+            
+            nameLBL.text = restaurant.name
+            ratingLBL.text = "Rating: \(restaurant.rating)"
+            if let image = UIImage(named:"\(restaurant.name).jpg") {
+                imageView.image = image
+            } else {
+                imageView.image = UIImage(named:"Generic Restaurant.jpg")
+            }
+        }
+        return cell
+    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

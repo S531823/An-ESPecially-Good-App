@@ -9,12 +9,30 @@
 import UIKit
 
 class GuessViewController: UIViewController {
+    
+    @IBOutlet weak var circleBTN: UIButton!
+    @IBOutlet weak var starBTN: UIButton!
+    @IBOutlet weak var triangleBTN: UIButton!
+    
+    @IBOutlet weak var resultLBL: UILabel!
+    @IBOutlet weak var scoreLBL: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func tappedCircle(sender: UIButton) {
+        
+    }
+    
+    @IBAction func tappedStar(sender: UIButton) {
+        
+    }
+    
+    @IBAction func tappedTriangle(sender: UIButton) {
+        
+    }
 
 }
 
