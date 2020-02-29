@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F1D32532409FF3B00BF67A0 /* Predictions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1D32522409FF3B00BF67A0 /* Predictions.swift */; };
 		3F3D6CE52405AA1200E9925C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D6CE42405AA1200E9925C /* AppDelegate.swift */; };
 		3F3D6CE72405AA1200E9925C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D6CE62405AA1200E9925C /* SceneDelegate.swift */; };
 		3F3D6CE92405AA1200E9925C /* GuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3D6CE82405AA1200E9925C /* GuessViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F1D32522409FF3B00BF67A0 /* Predictions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Predictions.swift; sourceTree = "<group>"; };
 		3F3D6CE12405AA1200E9925C /* An ESPecially Good App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "An ESPecially Good App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F3D6CE42405AA1200E9925C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F3D6CE62405AA1200E9925C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				3F3D6CEF2405AA1300E9925C /* Assets.xcassets */,
 				3F3D6CF12405AA1300E9925C /* LaunchScreen.storyboard */,
 				3F3D6CF42405AA1300E9925C /* Info.plist */,
+				3F1D32522409FF3B00BF67A0 /* Predictions.swift */,
 			);
 			path = "An ESPecially Good App";
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				3F3D6CE92405AA1200E9925C /* GuessViewController.swift in Sources */,
 				3F3D6CE52405AA1200E9925C /* AppDelegate.swift in Sources */,
 				3F3D6CE72405AA1200E9925C /* SceneDelegate.swift in Sources */,
+				3F1D32532409FF3B00BF67A0 /* Predictions.swift in Sources */,
 				3F3D6CFB2405AAAB00E9925C /* HistoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
