@@ -36,7 +36,7 @@ class Predictions {
     
     private static var _shared:Predictions! // Only visible in this struct
     
-    static var shared:Predictions {         // To access this anywhere, in the app just write Predictions.shared
+    static var shared:Predictions {
         if _shared == nil {
             _shared = Predictions()
         }
@@ -60,15 +60,15 @@ class Predictions {
         }
     }
     
-    func check(prediction: Shape) {
+    func check(prediction: Shape) -> Bool {
         currentQuestion.predictedShape = prediction
         questions.append(currentQuestion)
         
         if currentQuestion.isCorrect == true {
-            print("Smiley")
+            return true
         }
         else {
-            print("Frowny")
+            return false
         }
     }
     

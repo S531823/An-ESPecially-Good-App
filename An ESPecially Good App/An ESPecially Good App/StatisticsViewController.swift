@@ -6,15 +6,15 @@
 //  Copyright © 2020 S531823. All rights reserved.
 //
 
-import UIKit
-
-class StatisticsViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
-}
-
+//import UIKit
+//
+//class StatisticsViewController: UIViewController {
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // Do any additional setup after loading the view.
+//    }
+//
+//
+//}
+//
